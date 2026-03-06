@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GTM Test Page</title>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPP5H5TR');
+    </script>
+    <!-- End Google Tag Manager -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #6B21A8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Sans', sans-serif;
+            gap: 24px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2rem;
+            letter-spacing: -0.5px;
+        }
+        .btn-conversion {
+            background: #9CA3AF;
+            color: #1f1f1f;
+            border: none;
+            padding: 14px 40px;
+            font-size: 1rem;
+            font-family: inherit;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-conversion:hover { background: #6B7280; color: #fff; }
+        .btn-contacts {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 14px 40px;
+            font-size: 1rem;
+            font-family: inherit;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-contacts:hover { background: #fff; color: #6B21A8; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPP5H5TR"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <h1>Тестовая страница для GTM</h1>
+    <button class="btn-conversion" id="conversionButton">Нажми меня</button>
+    <button class="btn-contacts" id="contactsButton">Контакты</button>
+
+    <script>
+        document.getElementById("conversionButton").addEventListener("click", function() {
+            window.location.href = "thankyou.html";
+        });
+        document.getElementById("contactsButton").addEventListener("click", function() {
+            window.location.href = "contacts.html";
+        });
+    </script>
+</body>
+</html>
